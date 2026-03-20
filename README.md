@@ -4,6 +4,8 @@ A one-page LaTeX resume template for product managers.
 
 This version is inspired by Harshibar's resume format and Jake Yang's LaTeX resume template, then adapted into a public-facing, ATS-conscious product management template.
 
+![Resume Preview](resume-preview.png)
+
 ## What This Repository Includes
 
 - `resume-template.tex`: the editable LaTeX source
