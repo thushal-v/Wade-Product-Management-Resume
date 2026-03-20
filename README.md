@@ -24,7 +24,7 @@ The goal is to provide a clean PM-focused structure that:
 
 ## ATS Notes
 
-This template was reviewed with feedback from Quinncia, an ATS-focused resume analysis tool. That feedback informed the public version in a few practical ways:
+This template was reviewed with feedback from [Quinncia](https://quinncia.io), an ATS-focused resume analysis tool. That feedback informed the public version in a few practical ways:
 
 - clear section headers
 - simple one-column layout
