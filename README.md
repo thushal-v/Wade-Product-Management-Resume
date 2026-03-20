@@ -72,6 +72,10 @@ tectonic -X compile resume-template.tex
 pdflatex -interaction=nonstopmode -halt-on-error resume-template.tex
 ```
 
+### Option 3: Use Overleaf
+
+Upload `resume-template.tex` to Overleaf and compile the PDF in the editor.
+
 ## Tips For Keeping The Template Clean
 
 - Keep the summary line under each role short.
