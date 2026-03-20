@@ -1,0 +1,177 @@
+%-------------------------
+% Public Resume Template in LaTeX
+% Replace placeholder text with your own details
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generated pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\
+      \textit{#3} & {\color{dark-grey}\small #4}\\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\bullet$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge YOUR NAME, CERTIFICATION} \\ \vspace{5pt}
+    \small City, State (Open to Relocation) | your.email@example.com | 555-555-5555 | linkedin.com/in/yourprofile
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {PM Role -- Company A{\mdseries, City}}{Mon YYYY -- Present}
+      {Improved adoption with analytics-driven roadmap decisions.}{}
+      \resumeItemListStart
+        \resumeItem{Built KPI dashboards in SQL and Amplitude to monitor onboarding, trial conversion, and retention, surfacing bottlenecks that improved activation by 11\%.}
+        \resumeItem{Authored PRDs, user stories, and acceptance criteria for onboarding improvements, reducing time to first value by 28\% after launch.}
+        \resumeItem{Partnered with design and engineering through sprint planning and release reviews, driving 23\% adoption of a new workflow within 30 days.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PM Role -- Company B{\mdseries, City}}{Mon YYYY -- Mon YYYY}
+      {Validated a new service concept through user research.}{}
+      \resumeItemListStart
+        \resumeItem{Ran 30+ customer interviews and affinity mapping sessions, converting qualitative feedback into personas, jobs to be done, and prioritized requirements.}
+        \resumeItem{Created a Figma prototype and tested messaging, navigation, and support flows, increasing task success from 62\% to 88\% in usability sessions.}
+        \resumeItem{Presented a phased MVP strategy with KPIs, resourcing needs, and launch risks, securing stakeholder alignment on a pilot expected to lower support demand by 25\%.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PM Role -- Company C{\mdseries, City}}{Mon YYYY -- Mon YYYY}
+      {Assessed product opportunities for investment decisions.}{}
+      \resumeItemListStart
+        \resumeItem{Screened 20+ startups using market sizing, pricing analysis, and retention benchmarks to identify businesses with strong product-market fit signals.}
+        \resumeItem{Built a scoring model for TAM, differentiation, founder-market fit, and go-to-market readiness, improving diligence consistency by 40\%.}
+        \resumeItem{Synthesized demos, user feedback, and revenue traction into investment memos that informed a \$100,000 capital recommendation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {PM Role -- Company D{\mdseries, City}}{Mon YYYY -- Mon YYYY}
+      {Managed enterprise releases to improve delivery and compliance.}{}
+      \resumeItemListStart
+        \resumeItem{Translated stakeholder requests into epics, user stories, and release plans for a platform supporting 10,000 employees across multiple regions.}
+        \resumeItem{Led user acceptance testing, defect triage, and change management for quarterly releases, achieving 100\% compliance accuracy and cutting manual processing time by 18\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Name A}{Mon YYYY -- Mon YYYY}
+      {M.S. in Degree Name}{City, State}
+      \resumeItemListStart
+        \resumeItem{\textbf{Honors \& Activities}: Honor Name; Hackathon Winner; Volunteer Leadership Role; Student Organization Chair}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University Name B}{Mon YYYY -- Mon YYYY}
+      {B.S. in Degree Name}{City, Country}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Technical} {: Skill 1, Skill 2, Skill 3, Skill 4, Skill 5, Skill 6, Skill 7, Skill 8, Skill 9, Skill 10}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
