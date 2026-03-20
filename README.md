@@ -2,7 +2,7 @@
 
 A one-page LaTeX resume template for product managers.
 
-This version is inspired by [Harshibar](https://www.overleaf.com/latex/templates/harshibars-resume/sbcyynmtpnyd)'s resume format and [Jake](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)'s LaTeX resume template, then adapted into a public-facing, ATS-conscious product management template.
+This version is inspired by [Harshibar's template](https://www.overleaf.com/latex/templates/harshibars-resume/sbcyynmtpnyd) and [Jake's template](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs), then adapted into a public-facing, ATS-conscious product management template.
 
 ![Resume Preview](resume-preview.png)
 
